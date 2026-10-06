@@ -5,8 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>نظام شؤون العاملين</title>
     <style>
-        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background-color: #f4f7f6; }
-        iframe { width: 100%; height: 100%; border: none; }
+        body, html { 
+            margin: 0; 
+            padding: 0; 
+            height: 100%; 
+            overflow: hidden; 
+            background-color: #f4f7f6; 
+        }
+        iframe { 
+            width: 100%; 
+            height: calc(100% + 40px); /* زيادة الطول لتعويض الجزء المخفي */
+            border: none; 
+            margin-top: -38px; /* رفع الإطار للأعلى لإخفاء شريط جوجل */
+        }
     </style>
 </head>
 <body>
