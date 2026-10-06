@@ -2,23 +2,27 @@
 <html dir="rtl" lang="ar">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nefrtiti Bess HR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>نظام شؤون العاملين</title>
     <style>
         body, html { 
             margin: 0; 
             padding: 0; 
+            width: 100%;
             height: 100%; 
             overflow: hidden; 
             background-color: #f4f7f6; 
         }
         iframe { 
+            position: fixed;
+            top: 0;
+            left: 0;
             width: 100%; 
-            height: calc(100% + 15px); 
+            height: 100%; 
             border: none; 
-            margin-top: -10px; 
-            /* هذا السطر يضمن عدم وجود أي عائق وهمي يمنع الضغط على الأزرار */
-            pointer-events: auto; 
+            /* تفعيل التفاعل السلس واللمس على أجهزة الهواتف المحمولة */
+            -webkit-overflow-scrolling: touch;
+            pointer-events: auto;
         }
     </style>
 </head>
